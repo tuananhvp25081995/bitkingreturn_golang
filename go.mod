@@ -1,4 +1,4 @@
-module github.com/tuananhvp25081995/bitking-return-golang
+module github.com/tuananhvp25081995/bitkingreturn_golang
 
 go 1.15
 
