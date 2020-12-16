@@ -4,7 +4,6 @@ import (
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/labstack/gommon/log"
-	"github.com/tuananhvp25081995/bitkingreturn_golang/contollers"
 	"github.com/tuananhvp25081995/bitkingreturn_golang/db"
 	"gopkg.in/go-playground/validator.v9"
 )
