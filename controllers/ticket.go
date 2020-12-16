@@ -1,17 +1,19 @@
 package controllers
 
 import (
-	"errors"
-	"net/http"
+	"fmt"
 
-	"github.com/labstack/echo/v4"
-	"github.com/tuananhvp25081995/bitkingreturn_golang/models"
-	"github.com/tuananhvp25081995/bitkingreturn_golang/utils"
+	"github.com/labstack/echo"
 )
 
-type TicketHandler struct {
-	ticketStore ticket.Store
+func BuyTicket(c echo.Context) error {
+	fmt.Println(10000)
+	return nil
 }
+
+// type TicketHandler struct {
+// 	ticketStore ticket.Store
+// }
 
 // func NewTicketHandler(ts ticket.Store) *TicketHandler {
 // 	return &TicketHandler{

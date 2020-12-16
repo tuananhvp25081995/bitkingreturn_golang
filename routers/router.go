@@ -4,7 +4,7 @@ import (
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/labstack/gommon/log"
-	"github.com/tuananhvp25081995/bitkingreturn_golang/controllers"
+	"github.com/tuananhvp25081995/bitkingreturn_golang/contollers"
 	"github.com/tuananhvp25081995/bitkingreturn_golang/db"
 	"gopkg.in/go-playground/validator.v9"
 )
@@ -36,9 +36,7 @@ func Create(db *db.DB) *echo.Echo {
 	// ticketStore := store.NewTicketStore(db)
 	// ticketHandler := handler.NewTicketHandler(ticketStore)
 
-	postT := e.Group("/ticket")
-	{
-		postT.POST("/buy", ticketHandler.BuyTicket)
-	}
+	e.POST("/ticket/buy", contollers.BuyTicket)
+
 	return e
 }
