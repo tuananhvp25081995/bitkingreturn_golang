@@ -1,4 +1,4 @@
-module github.com/tuananhvp25081995/bitkingreturn_golang
+module github.com/tuananhvp25081995/bitking-return-golang
 
 go 1.15
 
@@ -18,3 +18,4 @@ require (
 	golang.org/x/text v0.3.4 // indirect
 	golang.org/x/tools v0.0.0-20201211185031-d93e913c1a58 // indirect
 	gopkg.in/go-playground/validator.v9 v9.31.0
+)

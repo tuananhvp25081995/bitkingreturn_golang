@@ -1,12 +1,11 @@
-package router
+package routers
 
 import (
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/labstack/gommon/log"
+	"github.com/tuananhvp25081995/bitkingreturn_golang/controllers"
 	"github.com/tuananhvp25081995/bitkingreturn_golang/db"
-	"github.com/tuananhvp25081995/bitkingreturn_golang/handler"
-	"github.com/tuananhvp25081995/bitkingreturn_golang/store"
 	"gopkg.in/go-playground/validator.v9"
 )
 
@@ -34,8 +33,8 @@ func Create(db *db.DB) *echo.Echo {
 		AllowMethods: []string{echo.GET, echo.HEAD, echo.PUT, echo.PATCH, echo.POST, echo.DELETE},
 	}))
 
-	ticketStore := store.NewTicketStore(db)
-	ticketHandler := handler.NewTicketHandler(ticketStore)
+	// ticketStore := store.NewTicketStore(db)
+	// ticketHandler := handler.NewTicketHandler(ticketStore)
 
 	postT := e.Group("/ticket")
 	{

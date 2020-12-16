@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/tuananhvp25081995/bitkingreturn_golang/db"
-	"github.com/tuananhvp25081995/bitkingreturn_golang/router"
+	"github.com/tuananhvp25081995/bitkingreturn_golang/routers"
 )
 
 func main() {
@@ -13,7 +13,7 @@ func main() {
 	}
 	defer db.Close()
 
-	r := router.Create(db)
+	r := routers.Create(db)
 
 	r.Logger.Fatal(r.Start("127.0.0.1:3000"))
 }
